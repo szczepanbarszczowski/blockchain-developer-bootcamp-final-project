@@ -2,6 +2,7 @@ require('dotenv').config();
 const path = require("path");
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const mnemonic = process.env.MNEMONIC;
+const infuraApi = process.env.INFURA_API_KEY
 
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
@@ -15,7 +16,7 @@ module.exports = {
     },
     ropsten: {
       provider: function() {
-        return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/ee58b3548ac44b18a3c4985eb251b858");
+        return new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/${infuraApi}`);
       },
       network_id: '3',
     },
