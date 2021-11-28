@@ -1,0 +1,3 @@
+Contracts are deployed on Ropsten:
+Bazooka token address: 0x070797CAB363ba22caaa998201AEB6088517c00f
+Dex address: 0xA8BccA67BD57d7835065Fcf069F440DeB5EE3474
